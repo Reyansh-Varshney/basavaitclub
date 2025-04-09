@@ -58,7 +58,7 @@ const TeamSection = () => {
       name: "Reyansh Varshney",
       role: "President",
       bio: "Leading club initiatives and fostering a collaborative learning environment.",
-      imageUrl: "/placeholder.svg",
+      imageUrl: "https://imgbb.com/][img]https://i.ibb.co/JWBwS5CN/20240128-131958-2.jpg",
     },
   ];
 
