@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Code, Users, Monitor, Lightbulb, Award, Globe } from 'lucide-react';
+import { Code, Users, Monitor, Lightbulb, Award } from 'lucide-react';
 
 interface ActivityCardProps {
   title: string;
@@ -55,12 +55,6 @@ const ActivitiesSection = () => {
       description: "Participation in regional and national technology competitions and challenges.",
       icon: <Award className="text-white" />,
       color: "bg-red-600",
-    },
-    {
-      title: "Tech Field Trips",
-      description: "Visits to tech companies and educational institutions to gain industry exposure.",
-      icon: <Globe className="text-white" />,
-      color: "bg-indigo-600",
     },
   ];
 
