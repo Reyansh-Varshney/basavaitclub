@@ -10,41 +10,41 @@ const Activities = () => {
   const upcomingEvents = [
     {
       title: "Web Development Workshop",
-      date: "April 15, 2023",
+      date: "April 20, 2024",
       time: "3:30 PM - 5:00 PM",
       location: "Computer Lab 1",
       description: "Learn the basics of HTML, CSS, and JavaScript to create your own website.",
     },
     {
       title: "Coding Competition",
-      date: "April 22, 2023",
+      date: "May 15, 2024",
       time: "2:00 PM - 5:00 PM",
       location: "Auditorium",
       description: "Test your programming skills in this exciting competition with prizes for the winners.",
     },
     {
-      title: "Tech Talk: AI and Machine Learning",
-      date: "May 5, 2023",
+      title: "Tech Talk: Introduction to AI",
+      date: "June 5, 2024",
       time: "4:00 PM - 5:00 PM",
       location: "Lecture Hall",
-      description: "Guest speaker from Google will discuss the latest trends in AI and machine learning.",
+      description: "An introductory session on artificial intelligence and its applications in today's world.",
     },
   ];
 
-  const pastEvents = [
+  const plannedActivities = [
     {
       title: "Mobile App Development Workshop",
-      date: "March 18, 2023",
+      plannedFor: "July 2024",
       description: "Introduction to Android app development using Kotlin.",
     },
     {
-      title: "Hackathon 2023",
-      date: "February 25-26, 2023",
-      description: "24-hour coding marathon where teams built innovative solutions for real-world problems.",
+      title: "First Annual Hackathon",
+      plannedFor: "August 2024",
+      description: "24-hour coding marathon where teams will build innovative solutions for real-world problems.",
     },
     {
       title: "Cybersecurity Seminar",
-      date: "January 20, 2023",
+      plannedFor: "September 2024",
       description: "Learning about online safety and basic cybersecurity practices.",
     },
   ];
@@ -57,7 +57,7 @@ const Activities = () => {
           <div className="container mx-auto px-4">
             <h1 className="text-4xl font-bold mb-6">Activities & Events</h1>
             <p className="text-lg text-gray-600 max-w-3xl">
-              Discover the exciting activities and events organized by the IT Club at Basava International School.
+              Discover the exciting activities and events we're planning for the newly formed IT Club at Basava International School.
             </p>
           </div>
         </div>
@@ -87,16 +87,16 @@ const Activities = () => {
               ))}
             </div>
             
-            <h2 className="text-3xl font-bold my-12 text-center">Past Events</h2>
+            <h2 className="text-3xl font-bold my-12 text-center">Future Activities</h2>
             <div className="max-w-3xl mx-auto">
-              {pastEvents.map((event, index) => (
+              {plannedActivities.map((activity, index) => (
                 <div key={index} className="mb-8 pb-8 border-b border-gray-200 last:border-0">
                   <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
                     <div>
-                      <h3 className="text-xl font-bold mb-2">{event.title}</h3>
-                      <p className="text-gray-600">{event.description}</p>
+                      <h3 className="text-xl font-bold mb-2">{activity.title}</h3>
+                      <p className="text-gray-600">{activity.description}</p>
                     </div>
-                    <div className="text-gray-500 whitespace-nowrap">{event.date}</div>
+                    <div className="text-gray-500 whitespace-nowrap">Planned for: {activity.plannedFor}</div>
                   </div>
                 </div>
               ))}

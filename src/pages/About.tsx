@@ -14,7 +14,7 @@ const About = () => {
           <div className="container mx-auto px-4">
             <h1 className="text-4xl font-bold mb-6">About Us</h1>
             <p className="text-lg text-gray-600 max-w-3xl">
-              Learn more about the IT Club at Basava International School, our mission, values, and the team behind our success.
+              Learn more about the newly formed IT Club at Basava International School, our mission, vision, and the team behind this exciting initiative.
             </p>
           </div>
         </div>
@@ -36,12 +36,12 @@ const About = () => {
               
               <Separator className="my-8" />
               
-              <h2 className="text-3xl font-bold mb-6">Club History</h2>
+              <h2 className="text-3xl font-bold mb-6">Club Beginnings</h2>
               <p className="text-lg text-gray-600 mb-4">
-                Founded in 2023 by Prabhav Kumar and Naman Gupta, the IT Club started as a small group of technology enthusiasts who wanted to create a space for students interested in coding and computer science. Under the presidency of Reyansh Varshney, the club has grown to include over 50 members, spanning various grades and interests within the technology domain.
+                Founded in 2024, the IT Club at Basava International School is just beginning its journey. Founded by Prabhav Kumar and Naman Gupta, the club started as a small group of technology enthusiasts with a shared vision of creating a space for students interested in coding and computer science.
               </p>
               <p className="text-lg text-gray-600">
-                Since its inception, the club has organized numerous workshops, hackathons, and tech talks, providing members with opportunities to learn and grow. Our alumni have gone on to pursue higher education in prestigious institutions and careers in leading tech companies.
+                Under the leadership of Reyansh Varshney, our first club president, we're excited to build a strong foundation and create valuable opportunities for our members. We're currently in the process of organizing our inaugural workshops, hackathons, and tech talks, and we invite all interested students to join us in shaping the future of this club.
               </p>
             </div>
           </div>
