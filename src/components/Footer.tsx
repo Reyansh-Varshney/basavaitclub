@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Twitter, Instagram, Github, Mail } from 'lucide-react';
-
 const Footer = () => {
-  return (
-    <footer className="bg-itclub-dark text-white py-12">
+  return <footer className="bg-itclub-dark text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
@@ -55,23 +52,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h3 className="font-bold text-lg mb-4">Resources</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">Blog</a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">Tutorials</a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">Projects</a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">Resources</a>
-              </li>
-            </ul>
-          </div>
+          
 
           <div>
             <h3 className="font-bold text-lg mb-4">Contact</h3>
@@ -85,8 +66,6 @@ const Footer = () => {
           <p>© {new Date().getFullYear()} IT Club - Basava International School. All rights reserved.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
