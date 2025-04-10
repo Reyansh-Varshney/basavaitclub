@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Twitter, Instagram, Github, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
+
 const Footer = () => {
   return <footer className="bg-itclub-dark text-white py-12">
       <div className="container mx-auto px-4">
@@ -15,18 +17,10 @@ const Footer = () => {
             <p className="text-gray-300">
               Empowering students with technology skills and fostering innovation at Basava International School.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="text-gray-300 hover:text-white">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white">
-                <Github size={20} />
-              </a>
-              <a href="mailto:itclub@basava.edu.in" className="text-gray-300 hover:text-white">
+            <div>
+              <a href="mailto:itclub@basava.edu.in" className="text-gray-300 hover:text-white flex items-center gap-2">
                 <Mail size={20} />
+                <span>itclub@basava.edu.in</span>
               </a>
             </div>
           </div>
@@ -52,8 +46,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          
-
           <div>
             <h3 className="font-bold text-lg mb-4">Contact</h3>
             <p className="text-gray-300 mb-2">Basava International School</p>
@@ -68,4 +60,5 @@ const Footer = () => {
       </div>
     </footer>;
 };
+
 export default Footer;

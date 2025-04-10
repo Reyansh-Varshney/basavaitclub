@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Github, Linkedin, Mail } from 'lucide-react';
 
 interface TeamMemberProps {
   name: string;
@@ -24,17 +23,6 @@ const TeamMember = ({ name, role, bio, imageUrl }: TeamMemberProps) => {
         <h3 className="text-xl font-bold">{name}</h3>
         <div className="text-sm font-medium text-blue-600 mb-3">{role}</div>
         <p className="text-gray-600 mb-4 text-sm">{bio}</p>
-        <div className="flex gap-3">
-          <a href="#" className="text-gray-500 hover:text-itclub-blue transition-colors">
-            <Github size={18} />
-          </a>
-          <a href="#" className="text-gray-500 hover:text-itclub-blue transition-colors">
-            <Linkedin size={18} />
-          </a>
-          <a href="#" className="text-gray-500 hover:text-itclub-blue transition-colors">
-            <Mail size={18} />
-          </a>
-        </div>
       </CardContent>
     </Card>
   );
