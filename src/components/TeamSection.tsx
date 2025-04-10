@@ -1,29 +1,34 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 
 interface TeamMemberProps {
   name: string;
   role: string;
   bio: string;
-  imageUrl: string;
 }
 
-const TeamMember = ({ name, role, bio, imageUrl }: TeamMemberProps) => {
+const TeamMember = ({ name, role, bio }: TeamMemberProps) => {
+  // Get initials for the avatar fallback
+  const initials = name
+    .split(' ')
+    .map(part => part[0])
+    .join('')
+    .toUpperCase();
+
   return (
     <Card className="overflow-hidden transform transition-all hover:shadow-lg">
-      <div className="aspect-square overflow-hidden bg-gray-100">
-        <img 
-          src={imageUrl || "/placeholder.svg"} 
-          alt={name} 
-          className="w-full h-full object-cover"
-        />
+      <div className="p-6 flex flex-col items-center">
+        <Avatar className="h-24 w-24 mb-4">
+          <AvatarFallback className="bg-blue-100 text-blue-800 text-xl">
+            {initials}
+          </AvatarFallback>
+        </Avatar>
+        <h3 className="text-xl font-bold text-center">{name}</h3>
+        <div className="text-sm font-medium text-blue-600 mb-3 text-center">{role}</div>
+        <p className="text-gray-600 mb-4 text-sm text-center">{bio}</p>
       </div>
-      <CardContent className="p-6">
-        <h3 className="text-xl font-bold">{name}</h3>
-        <div className="text-sm font-medium text-blue-600 mb-3">{role}</div>
-        <p className="text-gray-600 mb-4 text-sm">{bio}</p>
-      </CardContent>
     </Card>
   );
 };
@@ -34,19 +39,16 @@ const TeamSection = () => {
       name: "Prabhav Kumar",
       role: "Founder",
       bio: "Passionate about technology and innovation, leading the IT Club to new heights.",
-      imageUrl: "/placeholder.svg",
     },
     {
       name: "Naman Gupta",
       role: "Founder",
       bio: "Tech enthusiast with expertise in programming and system design.",
-      imageUrl: "/placeholder.svg",
     },
     {
       name: "Reyansh Varshney",
       role: "President",
       bio: "Leading club initiatives and fostering a collaborative learning environment.",
-      imageUrl: "/placeholder.svg",
     },
   ];
 
