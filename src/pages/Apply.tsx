@@ -22,32 +22,19 @@ const Apply = () => {
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <h2 className="text-2xl font-semibold p-6 border-b">Application Form</h2>
               <div className="embed-container" style={{ height: "800px" }}>
-                {/* Google Form Embed */}
                 <iframe 
-                  src="https://docs.google.com/forms/d/e/1FAIpQLSdFJsAYDklS5ZjJwBLdF0clCvmBhVuHLZ4kuJHNSakKOxrNHw/viewform?embedded=true" 
+                  src="https://forms.office.com/Pages/ResponsePage.aspx?id=peB63TrwM0KrmOGdAZVYsHtBhk7WzVRBuyHWkvQxaExUNUNXRU5RQVpFRUZUR1ozNzVLWVRTUFdIUy4u&embed=true" 
                   width="100%" 
                   height="100%" 
                   frameBorder="0" 
                   marginHeight={0} 
                   marginWidth={0}
                   className="w-full h-full"
+                  style={{ border: "none", maxWidth: "100%", maxHeight: "100vh" }}
+                  allowFullScreen 
                 >
                   Loading form...
                 </iframe>
-                
-                {/* For Microsoft Form, uncomment this and comment out the Google Form above
-                <iframe 
-                  src="https://forms.office.com/Pages/ResponsePage.aspx?id=YOUR_FORM_ID_HERE" 
-                  width="100%" 
-                  height="100%" 
-                  frameBorder="0" 
-                  marginHeight={0} 
-                  marginWidth={0}
-                  className="w-full h-full"
-                >
-                  Loading form...
-                </iframe>
-                */}
               </div>
             </div>
           </div>
