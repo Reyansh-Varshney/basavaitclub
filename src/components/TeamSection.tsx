@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
@@ -49,6 +48,11 @@ const TeamSection = () => {
       name: "Reyansh Varshney",
       role: "President",
       bio: "Leading club initiatives and fostering a collaborative learning environment.",
+    },
+    {
+      name: "Priyanka Bhardwaj",
+      role: "Mentor",
+      bio: "Guiding and supporting the team with her extensive knowledge and experience in the tech industry.",
     },
   ];
 
