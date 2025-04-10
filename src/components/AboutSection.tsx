@@ -53,11 +53,7 @@ const AboutSection = () => {
           </div>
           
           <div className="grid grid-cols-2 gap-6">
-            <StatCard 
-              icon={<Calendar className="text-blue-600" />}
-              title="Weekly Meetings"
-              value="Fridays"
-            />
+
             <StatCard 
               icon={<Users className="text-purple-600" />}
               title="Current Members"
