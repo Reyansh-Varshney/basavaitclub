@@ -6,42 +6,12 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Mail } from 'lucide-react';
 const Team = () => {
   const mentors = [{
-    name: "Mrs. Sharma",
-    role: "Faculty Advisor",
-    subject: "Computer Science",
-    bio: "Guiding students in their technical journey and overseeing club activities."
-  }, {
-    name: "Mr. Patel",
-    role: "Technical Mentor",
-    subject: "Information Technology",
-    bio: "Providing expertise in programming and helping students develop technical skills."
-  }, {
     name: "Priyanka Bhardwaj",
     role: "Innovation Mentor",
     subject: "Computer Applications",
     bio: "Supporting students in creative problem-solving and innovative project development."
   }];
-  const committeeMembers = [{
-    name: "Aanya Singh",
-    role: "Vice President",
-    grade: "Class 12",
-    responsibility: "Assists the president in club operations and leads marketing initiatives."
-  }, {
-    name: "Aarav Gupta",
-    role: "Secretary",
-    grade: "Class 11",
-    responsibility: "Manages club records, communications, and meeting minutes."
-  }, {
-    name: "Ishaan Sharma",
-    role: "Technical Head",
-    grade: "Class 12",
-    responsibility: "Oversees technical aspects of club projects and workshops."
-  }, {
-    name: "Meera Patel",
-    role: "Events Coordinator",
-    grade: "Class 11",
-    responsibility: "Plans and coordinates club events, workshops, and competitions."
-  }];
+  
   return <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">
