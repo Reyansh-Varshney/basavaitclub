@@ -18,9 +18,9 @@ const Footer = () => {
               Empowering students with technology skills and fostering innovation at Basava International School.
             </p>
             <div>
-              <a href="mailto:itclub@basava.edu.in" className="text-gray-300 hover:text-white flex items-center gap-2">
+              <a href="mailto:itclub@basavainternational.onmicrosoft.com" className="text-gray-300 hover:text-white flex items-center gap-2">
                 <Mail size={20} />
-                <span>itclub@basava.edu.in</span>
+                <span>itclub@basavainternational.onmicrosoft.com</span>
               </a>
             </div>
           </div>
