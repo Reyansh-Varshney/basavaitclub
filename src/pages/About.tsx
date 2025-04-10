@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -18,9 +17,9 @@ const About = () => {
             </p>
           </div>
         </div>
-        
+
         <AboutSection />
-        
+
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
@@ -28,21 +27,15 @@ const About = () => {
               <p className="text-lg text-gray-600 mb-8">
                 The IT Club of Basava International School aims to foster a community of technology enthusiasts who learn, collaborate, and innovate together. We are dedicated to providing a platform for students to explore their interests in various fields of information technology and develop skills that will be valuable in their academic and professional careers.
               </p>
-              
+
               <h2 className="text-3xl font-bold mb-6">Our Vision</h2>
               <p className="text-lg text-gray-600 mb-8">
                 We envision creating a vibrant ecosystem where students can enhance their technical skills, foster creativity, and develop a passion for technology. By encouraging hands-on learning and collaborative projects, we aim to prepare our members for the digital future and inspire them to become leaders in the tech industry.
               </p>
-              
+
               <Separator className="my-8" />
-              
-              <h2 className="text-3xl font-bold mb-6">Club Beginnings</h2>
-              <p className="text-lg text-gray-600 mb-4">
-                Founded in 2024, the IT Club at Basava International School is just beginning its journey. Founded by Prabhav Kumar and Naman Gupta, the club started as a small group of technology enthusiasts with a shared vision of creating a space for students interested in coding and computer science.
-              </p>
-              <p className="text-lg text-gray-600">
-                Under the leadership of Reyansh Varshney, our first club president, we're excited to build a strong foundation and create valuable opportunities for our members. We're currently in the process of organizing our inaugural workshops, hackathons, and tech talks, and we invite all interested students to join us in shaping the future of this club.
-              </p>
+
+              {/* Removed "Club Beginnings" section */}
             </div>
           </div>
         </section>
