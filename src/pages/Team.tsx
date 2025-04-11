@@ -1,20 +1,19 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import TeamSection from '@/components/TeamSection';
-import { Card, CardContent } from '@/components/ui/card';
-import { Mail } from 'lucide-react';
+// import { Card, CardContent } from '@/components/ui/card'; // No longer needed
+// import { Mail } from 'lucide-react'; // No longer needed
 
 const Team = () => {
-  const mentors = [
-    {
-      name: "Priyanka Bhardwaj",
-      role: "Innovation Mentor",
-      subject: "Computer Applications",
-      bio: "Supporting students in creative problem-solving and innovative project development."
-    }
-  ];
+  // const mentors = [ // No longer used
+  //   {
+  //     name: "Priyanka Bhardwaj",
+  //     role: "Innovation Mentor",
+  //     subject: "Computer Applications",
+  //     bio: "Supporting students in creative problem-solving and innovative project development."
+  //   }
+  // ];
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -31,7 +30,8 @@ const Team = () => {
 
         <TeamSection />
 
-        <section className="py-16 bg-white">
+        {/* Remove or comment out this entire section */}
+        {/* <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8 text-center">Faculty Mentors</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -54,7 +54,7 @@ const Team = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
       <Footer />
     </div>
