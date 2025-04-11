@@ -60,6 +60,11 @@ const AboutSection = () => {
               value="New"
             />
             <StatCard 
+              icon={<Calendar className="text-blue-600" />}
+              title="Weekly Meetings"
+              value="Fridays"
+            />
+            <StatCard 
               icon={<Trophy className="text-yellow-600" />}
               title="Future Goals"
               value="Many"
