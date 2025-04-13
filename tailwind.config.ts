@@ -63,7 +63,7 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-                itclub: {
+                TechNexus: {
                     blue: '#1e40af',
                     purple: '#7e22ce',
                     light: '#f5f5f5',

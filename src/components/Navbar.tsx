@@ -16,10 +16,10 @@ const Navbar = () => {
     <nav className="bg-white shadow-md py-4 sticky top-0 z-50">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-gradient-to-r from-itclub-blue to-itclub-purple rounded-lg flex items-center justify-center">
+          <div className="w-10 h-10 bg-gradient-to-r from-TechNexus-blue to-TechNexus-purple rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-xl">IT</span>
           </div>
-          <span className="font-bold text-xl text-itclub-dark">Technexus</span>
+          <span className="font-bold text-xl text-TechNexus-dark">Technexus</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -60,16 +60,16 @@ interface NavLinksProps {
 const NavLinks = ({ className }: NavLinksProps) => {
   return (
     <div className={cn(className)}>
-      <Link to="/" className="text-itclub-dark hover:text-itclub-blue transition-colors">
+      <Link to="/" className="text-TechNexus-dark hover:text-TechNexus-blue transition-colors">
         Home
       </Link>
-      <Link to="/about" className="text-itclub-dark hover:text-itclub-blue transition-colors">
+      <Link to="/about" className="text-TechNexus-dark hover:text-TechNexus-blue transition-colors">
         About
       </Link>
-      <Link to="/activities" className="text-itclub-dark hover:text-itclub-blue transition-colors">
+      <Link to="/activities" className="text-TechNexus-dark hover:text-TechNexus-blue transition-colors">
         Activities
       </Link>
-      <Link to="/team" className="text-itclub-dark hover:text-itclub-blue transition-colors">
+      <Link to="/team" className="text-TechNexus-dark hover:text-TechNexus-blue transition-colors">
         Team
       </Link>
     </div>

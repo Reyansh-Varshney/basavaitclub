@@ -3,7 +3,7 @@
 Welcome to the official website of the **Basava International School's Technexus**!  
 This platform is your go-to destination for exploring technology, sharing knowledge, and staying connected with the latest club activities.
 
-🌐 [Visit the Website](https://basavaitclub.vercel.app/)
+🌐 [Visit the Website](https://basavaTechNexus.vercel.app/)
 
 ---
 

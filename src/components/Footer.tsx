@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 import { Mail } from 'lucide-react';
 
 const Footer = () => {
-  return <footer className="bg-itclub-dark text-white py-12">
+  return <footer className="bg-TechNexus-dark text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-gradient-to-r from-itclub-blue to-itclub-purple rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-r from-TechNexus-blue to-TechNexus-purple rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">IT</span>
               </div>
               <span className="font-bold text-xl text-white">Technexus</span>
@@ -18,9 +18,9 @@ const Footer = () => {
               Empowering students with technology skills and fostering innovation at Basava International School.
             </p>
             <div>
-              <a href="mailto:itclub@basavainternational.onmicrosoft.com" className="text-gray-300 hover:text-white flex items-center gap-2">
+              <a href="mailto:TechNexus@basavainternational.onmicrosoft.com" className="text-gray-300 hover:text-white flex items-center gap-2">
                 <Mail size={20} />
-                <span>itclub@basavainternational.onmicrosoft.com</span>
+                <span>TechNexus@basavainternational.onmicrosoft.com</span>
               </a>
             </div>
           </div>
@@ -50,7 +50,7 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Contact</h3>
             <p className="text-gray-300 mb-2">Basava International School</p>
             <p className="text-gray-300 mb-4">New Delhi, India</p>
-            <p className="text-gray-300">Email: itclub@basava.edu.in</p>
+            <p className="text-gray-300">Email: TechNexus@basava.edu.in</p>
           </div>
         </div>
 
