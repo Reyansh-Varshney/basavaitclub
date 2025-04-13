@@ -50,6 +50,16 @@ const TeamSection = () => {
       bio: "Leading club initiatives and fostering a collaborative learning environment.",
     },
     {
+      name: "Vedaant Gomber",
+      role: "Secretary",
+      bio: "A True all-rounder and a future prospect for the IT Club.",
+    },
+    {
+      name: "Bhawani Shankar",
+      role: "Mentor",
+      bio: "Too Passionate too much about technology and master in video editing.",
+    },
+    {
       name: "Priyanka Bhardwaj",
       role: "Mentor",
       bio: "Guiding and supporting the team with her extensive knowledge and experience in the tech industry.",
