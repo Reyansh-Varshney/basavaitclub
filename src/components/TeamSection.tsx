@@ -37,7 +37,7 @@ const TeamSection = () => {
     {
       name: "Prabhav Kumar",
       role: "Founder",
-      bio: "Passionate about technology and innovation, leading the IT Club to new heights.",
+      bio: "Passionate about technology and innovation, leading the TechNexus to new heights.",
     },
     {
       name: "Naman Gupta",
