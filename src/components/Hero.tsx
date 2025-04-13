@@ -20,7 +20,7 @@ const Hero = () => {
               Basava International School
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Welcome to the <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-purple-200">Technexus</span>
+              Welcome to <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-purple-200">Technexus</span>
             </h1>
             <p className="text-lg md:text-xl text-blue-100">
               Empowering students with technology skills and fostering innovation through hands-on learning and collaborative projects.
