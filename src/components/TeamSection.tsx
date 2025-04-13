@@ -55,7 +55,7 @@ const TeamSection = () => {
       bio: "Guiding and supporting the team with her extensive knowledge and experience in the tech industry.",
     },
     {
-      name: "Vedant Gomber",
+      name: "Vedaant Gomber",
       role: "Secretary",
       bio: "A Truly all-rounder and a future prospect for the IT Club.",
     },
