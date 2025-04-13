@@ -19,7 +19,7 @@ const Navbar = () => {
           <div className="w-10 h-10 bg-gradient-to-r from-itclub-blue to-itclub-purple rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-xl">IT</span>
           </div>
-          <span className="font-bold text-xl text-itclub-dark">IT Club</span>
+          <span className="font-bold text-xl text-itclub-dark">Technexus</span>
         </Link>
 
         {/* Desktop Navigation */}

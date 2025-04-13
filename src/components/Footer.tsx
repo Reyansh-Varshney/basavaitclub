@@ -12,7 +12,7 @@ const Footer = () => {
               <div className="w-10 h-10 bg-gradient-to-r from-itclub-blue to-itclub-purple rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">IT</span>
               </div>
-              <span className="font-bold text-xl text-white">IT Club</span>
+              <span className="font-bold text-xl text-white">Technexus</span>
             </div>
             <p className="text-gray-300">
               Empowering students with technology skills and fostering innovation at Basava International School.
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>© {new Date().getFullYear()} IT Club - Basava International School. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Technexus - Basava International School. All rights reserved.</p>
         </div>
       </div>
     </footer>;

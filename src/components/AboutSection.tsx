@@ -14,7 +14,7 @@ const AboutSection = () => {
             </div>
             <h2 className="text-3xl md:text-4xl font-bold">Fostering Innovation and Technology Skills</h2>
             <p className="text-gray-600 text-lg">
-              The IT Club at Basava International School is a newly formed group dedicated to nurturing technical talent and fostering innovation among students. Our mission is to provide a platform for students to explore various aspects of information technology, develop practical skills, and collaborate on exciting projects.
+              The Technexus at Basava International School is a newly formed group dedicated to nurturing technical talent and fostering innovation among students. Our mission is to provide a platform for students to explore various aspects of information technology, develop practical skills, and collaborate on exciting projects.
             </p>
             
             <div className="space-y-4">

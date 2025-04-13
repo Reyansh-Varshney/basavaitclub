@@ -24,7 +24,7 @@ const Team = () => {
           <div className="container mx-auto px-4">
             <h1 className="text-4xl font-bold mb-6">Our Team</h1>
             <p className="text-lg text-gray-600 max-w-3xl">
-              Meet the dedicated individuals who make the IT Club at Basava International School a success.
+              Meet the dedicated individuals who make the Technexus at Basava International School a success.
             </p>
           </div>
         </div>

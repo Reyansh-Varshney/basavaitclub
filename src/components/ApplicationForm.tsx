@@ -105,7 +105,7 @@ const ApplicationForm = () => {
         <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 mb-4">
           <FileCode className="h-8 w-8 text-white" />
         </div>
-        <h2 className="text-3xl font-bold mb-4">Join the IT Club</h2>
+        <h2 className="text-3xl font-bold mb-4">Join the Technexus</h2>
         <p className="text-gray-600">
           Complete the application form below to join our community of tech enthusiasts.
         </p>
@@ -399,7 +399,7 @@ const ApplicationForm = () => {
                       <FormItem>
                         <FormLabel>Project Idea</FormLabel>
                         <p className="text-sm text-gray-500 mb-2">
-                          Describe a tech project you'd like to work on as part of the IT Club.
+                          Describe a tech project you'd like to work on as part of the Technexus.
                         </p>
                         <FormControl>
                           <Textarea
@@ -426,7 +426,7 @@ const ApplicationForm = () => {
                         </FormControl>
                         <div className="space-y-1 leading-none">
                           <FormLabel className="text-sm">
-                            I agree to the terms and conditions of the IT Club
+                            I agree to the terms and conditions of the Technexus
                           </FormLabel>
                         </div>
                       </FormItem>
@@ -470,7 +470,7 @@ const ApplicationForm = () => {
       </Card>
 
       <div className="mt-8 text-center text-sm text-gray-500">
-        <p>By submitting this application, you'll be considered for IT Club membership for the current academic year.</p>
+        <p>By submitting this application, you'll be considered for Technexus membership for the current academic year.</p>
       </div>
     </div>
   );

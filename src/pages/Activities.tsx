@@ -12,7 +12,7 @@ const Activities = () => {
           <div className="container mx-auto px-4">
             <h1 className="text-4xl font-bold mb-6">Activities & Events</h1>
             <p className="text-lg text-gray-600 max-w-3xl">
-              Discover the exciting activities and events we're planning for the newly formed IT Club at Basava International School.
+              Discover the exciting activities and events we're planning for the newly formed Technexus at Basava International School.
             </p>
           </div>
         </div>

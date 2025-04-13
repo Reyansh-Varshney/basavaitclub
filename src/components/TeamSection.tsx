@@ -37,7 +37,7 @@ const TeamSection = () => {
     {
       name: "Prabhav Kumar",
       role: "Founder",
-      bio: "Passionate about technology and innovation, leading the IT Club to new heights.",
+      bio: "Passionate about technology and innovation, leading the Technexus to new heights.",
     },
     {
       name: "Naman Gupta",
@@ -57,7 +57,7 @@ const TeamSection = () => {
     {
       name: "Vedant Gomber",
       role: "Secretary",
-      bio: "A Truly all-rounder and a future prospect for the IT Club.",
+      bio: "A Truly all-rounder and a future prospect for the Technexus.",
     },
     {
       name: "Bhawani Shankar",
@@ -72,7 +72,7 @@ const TeamSection = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Our Team</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Get to know the brilliant minds behind the IT Club at Basava International School.
+            Get to know the brilliant minds behind the Technexus at Basava International School.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

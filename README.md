@@ -1,15 +1,15 @@
-# Basava IT Club Website
+# Basava Technexus Website
 
-Welcome to the official website of the **Basava International School's IT Club**!  
+Welcome to the official website of the **Basava International School's Technexus**!  
 This platform is your go-to destination for exploring technology, sharing knowledge, and staying connected with the latest club activities.
 
 🌐 [Visit the Website](https://basavaitclub.vercel.app/)
 
 ---
 
-## 📌 About the IT Club
+## 📌 About the Technexus
 
-The **IT Club** at Basava International School is a student-led initiative that encourages curiosity, creativity, and collaboration in the field of Information Technology. We aim to create a fun and engaging space for students to learn, build, and explore tech beyond the classroom.
+The **Technexus** at Basava International School is a student-led initiative that encourages curiosity, creativity, and collaboration in the field of Information Technology. We aim to create a fun and engaging space for students to learn, build, and explore tech beyond the classroom.
 
 ---
 
@@ -31,7 +31,7 @@ The **IT Club** at Basava International School is a student-led initiative that 
 
 ## 🙋‍♂️ Join the Club
 
-If you're a student at Basava International School and passionate about technology, the IT Club is the perfect place to be!  
+If you're a student at Basava International School and passionate about technology, the Technexus is the perfect place to be!  
 Visit the website to find out how you can become a member and get involved.
 
 ---
@@ -45,4 +45,4 @@ Or reach out via your school IT coordinator.
 
 ---
 
-> _This website was designed and developed with the spirit of innovation and learning. Explore, create, and grow with the Basava IT Club!_
+> _This website was designed and developed with the spirit of innovation and learning. Explore, create, and grow with the Basava Technexus!_
