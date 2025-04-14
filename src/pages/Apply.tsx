@@ -22,7 +22,7 @@ const Apply = () => {
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <h2 className="text-2xl font-semibold p-6 border-b">Application Form</h2>
               <div className="embed-container" style={{ height: "800px" }}>
-                <iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=eYUgpg8bDUezEadmZ3bYIe0lSzmNN8ZBg9K-C0IVlGZUQkNRVjZIM1lFODNaS0ZaWVpVN1BKWFVXVi4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+               <iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=eYUgpg8bDUezEadmZ3bYIe0lSzmNN8ZBg9K-C0IVlGZUQkNRVjZIM1lFODNaS0ZaWVpVN1BKWFVXVi4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe> 
               </div>
             </div>
           </div>
