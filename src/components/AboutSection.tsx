@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const AboutSection = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-slate-800">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary inline-block">About Our Club</h2>
@@ -14,8 +14,8 @@ const AboutSection = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
-            <h3 className="text-3xl font-bold text-slate-800">Fostering Innovation and Technology Skills</h3>
-            <p className="text-slate-600 text-lg leading-relaxed">
+            <h3 className="text-3xl font-bold text-white">Fostering Innovation and Technology Skills</h3>
+            <p className="text-slate-300 text-lg leading-relaxed">
               The Technexus at Basava International School is a newly formed group dedicated to nurturing technical talent and fostering innovation among students. Our mission is to provide a platform for students to explore various aspects of information technology, develop practical skills, and collaborate on exciting projects.
             </p>
             
@@ -87,8 +87,8 @@ const FeatureBox = ({ icon, title, description }: FeatureBoxProps) => {
         {icon}
       </div>
       <div>
-        <h4 className="font-semibold text-slate-800">{title}</h4>
-        <p className="text-slate-600 text-sm">{description}</p>
+        <h4 className="font-semibold text-white">{title}</h4>
+        <p className="text-slate-300 text-sm">{description}</p>
       </div>
     </div>
   );
@@ -102,11 +102,11 @@ interface StatCardProps {
 
 const StatCard = ({ icon, title, value }: StatCardProps) => {
   return (
-    <Card className="border-none shadow-lg hover-scale overflow-hidden">
+    <Card className="border-none shadow-lg hover-scale overflow-hidden bg-slate-700/40 border-slate-600/20">
       <CardContent className="p-6 flex flex-col items-center text-center">
-        <div className="mb-4 p-4 rounded-full bg-slate-50">{icon}</div>
+        <div className="mb-4 p-4 rounded-full bg-slate-800">{icon}</div>
         <h3 className="text-3xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">{value}</h3>
-        <p className="text-slate-600">{title}</p>
+        <p className="text-slate-300">{title}</p>
       </CardContent>
     </Card>
   );

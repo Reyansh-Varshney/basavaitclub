@@ -13,13 +13,13 @@ interface ActivityCardProps {
 
 const ActivityCard = ({ title, description, icon, color, delay }: ActivityCardProps) => {
   return (
-    <Card className="h-full border-none shadow-lg hover-scale overflow-hidden" style={{ animationDelay: delay }}>
+    <Card className="h-full border-none shadow-lg hover-scale overflow-hidden bg-slate-800/60 border-slate-700/30" style={{ animationDelay: delay }}>
       <CardContent className="p-8">
         <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 ${color}`}>
           {icon}
         </div>
-        <h3 className="text-xl font-bold mb-3">{title}</h3>
-        <p className="text-slate-600">{description}</p>
+        <h3 className="text-xl font-bold mb-3 text-white">{title}</h3>
+        <p className="text-slate-300">{description}</p>
       </CardContent>
     </Card>
   );
@@ -45,7 +45,7 @@ const ActivitiesSection = () => {
       title: "Tech Talks",
       description: "Presentations by industry professionals and academics on emerging technologies.",
       icon: <Monitor className="text-white" size={24} />,
-      color: "bg-gradient-to-br from-green-500 to-green-700",
+      color: "bg-gradient-to-br from-cyan-500 to-cyan-700",
       delay: "0.2s",
     },
     {
@@ -65,12 +65,12 @@ const ActivitiesSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-slate-50">
+    <section className="py-24 bg-slate-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary inline-block">Our Activities</h2>
           <div className="divider"></div>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+          <p className="text-lg text-slate-300 max-w-2xl mx-auto">
             Explore the various activities and events that make our Technexus a hub of innovation and learning.
           </p>
         </div>

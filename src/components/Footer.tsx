@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Github, Linkedin, Instagram, ExternalLink } from 'lucide-react';
+import { Mail, ExternalLink } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -24,17 +24,6 @@ const Footer = () => {
               <a href="mailto:technexus@basava.edu.in" className="text-slate-300 hover:text-white flex items-center gap-2 transition-colors">
                 <Mail size={18} />
                 <span>technexus@basava.edu.in</span>
-              </a>
-            </div>
-            <div className="flex gap-4">
-              <a href="#" className="text-slate-300 hover:text-white transition-colors p-2 hover:bg-white/10 rounded-full">
-                <Github size={20} />
-              </a>
-              <a href="#" className="text-slate-300 hover:text-white transition-colors p-2 hover:bg-white/10 rounded-full">
-                <Linkedin size={20} />
-              </a>
-              <a href="#" className="text-slate-300 hover:text-white transition-colors p-2 hover:bg-white/10 rounded-full">
-                <Instagram size={20} />
               </a>
             </div>
           </div>

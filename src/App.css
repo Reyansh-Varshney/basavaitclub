@@ -1,5 +1,5 @@
 
-/* This file is now mostly empty since we moved styles to index.css and Tailwind */
+/* This file is now mostly empty since we moved styles to index.css */
 /* We keep it to avoid breaking any imports */
 
 .card {
@@ -8,4 +8,17 @@
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Fix for Netlify deployment */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
 }

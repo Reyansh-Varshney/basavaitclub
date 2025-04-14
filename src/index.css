@@ -5,38 +5,6 @@
 
 @layer base {
   :root {
-    --background: 220 33% 98%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 260 73% 47%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 221 83% 53%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 262 83% 58%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221 83% 53%;
-
-    --radius: 1rem;
-  }
-
-  .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
 
@@ -46,16 +14,16 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 260 73% 47%;
+    --primary: 217 91% 60%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 221 83% 53%;
+    --secondary: 199 89% 48%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 262 83% 58%;
+    --accent: 199 89% 48%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -63,17 +31,24 @@
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 221 83% 53%;
+    --ring: 224.3 76.3% 48%;
+
+    --radius: 1rem;
   }
 }
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border selection:bg-white/10 selection:text-white;
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-slate-900 text-foreground font-sans;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+
+  html {
+    @apply scroll-smooth;
   }
 }
 
@@ -93,7 +68,11 @@
 }
 
 .glass-card {
-  @apply backdrop-blur-md bg-white/80 dark:bg-black/40 border border-white/20 shadow-lg;
+  @apply backdrop-blur-md bg-slate-800/40 border border-slate-700/30 shadow-lg;
+}
+
+.neo-blur {
+  @apply backdrop-blur-2xl bg-slate-800/40 border border-slate-700/30;
 }
 
 .hover-scale {
@@ -115,4 +94,41 @@
 
 .divider {
   @apply h-1 w-20 bg-gradient-to-r from-primary to-secondary rounded-full my-8 mx-auto;
+}
+
+/* Animation utilities */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+  }
+}
+
+.animate-glow {
+  animation: glow 3s infinite;
+}
+
+/* Text gradient animation */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.text-gradient-animated {
+  @apply text-transparent bg-clip-text;
+  background-image: linear-gradient(90deg, #3b82f6, #06b6d4, #3b82f6);
+  background-size: 200% auto;
+  animation: gradient-shift 6s linear infinite;
 }
