@@ -63,7 +63,7 @@ const TeamSection = () => {
     {
       name: "Bhawani Shankar",
       role: "Mentor",
-      bio: "Too Passionate too much about technology and master in video editing.",
+      bio: "Too Passionate about technology and master in video editing.",
     },
     {
       name: "Priyanka Bhardwaj",
