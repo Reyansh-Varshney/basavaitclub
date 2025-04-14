@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-8">
           <NavLinks className="flex gap-8" isScrolled={isScrolled} />
           <Link to="/apply">
-            <Button size="sm" className="futuristic-button rounded-full px-6">
+            <Button size="sm" className="futuristic-button rounded-full px-6 text-neutral-50 bg-blue-1000 hover:bg-blue-800">
               Join Now
             </Button>
           </Link>
