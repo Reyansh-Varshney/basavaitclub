@@ -63,7 +63,7 @@ const NavLinks = ({
       <Link to="/" className="text-slate-300 hover:text-primary font-medium transition-colors relative mouse-tracking-border p-2 rounded">
         Home
       </Link>
-      <Link to="/about" className="text-slate-50 hover:text-primary font-medium transition-colors relative mouse-tracking-border p-2 rounded">
+      <Link to="/about" className="text-slate-300 hover:text-primary font-medium transition-colors relative mouse-tracking-border p-2 rounded">
         About
       </Link>
       <Link to="/activities" className="text-slate-300 hover:text-primary font-medium transition-colors relative mouse-tracking-border p-2 rounded">
