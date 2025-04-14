@@ -1,17 +1,14 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import AboutSection from '@/components/AboutSection';
 import { Separator } from '@/components/ui/separator';
-
 const About = () => {
-  return (
-    <div className="min-h-screen flex flex-col bg-slate-900">
+  return <div className="min-h-screen flex flex-col bg-slate-900">
       <Navbar />
       <main className="flex-grow">
         <div className="bg-slate-800 py-12">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 py-[17px]">
             <h1 className="text-4xl font-bold mb-6 text-white">
               
               About Us</h1>
@@ -42,8 +39,6 @@ const About = () => {
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default About;
