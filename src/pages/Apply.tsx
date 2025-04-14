@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -16,18 +15,32 @@ const Apply = () => {
             </p>
           </div>
         </div>
-        
+
         <section className="py-12 bg-white">
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <h2 className="text-2xl font-semibold p-6 border-b">Application Form</h2>
-              <div className="embed-container" style={{ height: "800px" }}>
-               <iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=eYUgpg8bDUezEadmZ3bYIe0lSzmNN8ZBg9K-C0IVlGZUQkNRVjZIM1lFODNaS0ZaWVpVN1BKWFVXVi4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe> 
+              <div style={{ position: 'relative', width: '100%', paddingBottom: '75%' }}> {/* Responsive container */}
+                <iframe
+                  title="Application Form"
+                  width="100%"
+                  height="100%"
+                  src="https://forms.office.com/Pages/ResponsePage.aspx?id=eYUgpg8bDUezEadmZ3bYIe0lSzmNN8ZBg9K-C0IVlGZUQkNRVjZIM1lFODNaS0ZaWVpVN1BKWFVXVi4u&embed=true"
+                  frameBorder="0"
+                  marginWidth="0"
+                  marginHeight="0"
+                  style={{ position: 'absolute', top: 0, left: 0, border: 'none' }}
+                  allowFullScreen
+                  webkitAllowFullScreen
+                  mozAllowFullScreen
+                  msAllowFullScreen
+                >
+                </iframe>
               </div>
             </div>
           </div>
         </section>
-        
+
         <section className="py-12 bg-gray-50">
           <div className="container mx-auto px-4 max-w-4xl">
             <h2 className="text-2xl font-bold mb-8 text-center">Membership Benefits</h2>
