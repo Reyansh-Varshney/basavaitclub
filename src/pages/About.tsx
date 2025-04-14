@@ -12,7 +12,8 @@ const About = () => {
       <main className="flex-grow">
         <div className="bg-slate-800 py-12">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl font-bold mb-6 text-white">About Us</h1>
+            <h1 className="text-4xl font-bold mb-6 text-white">
+              About Us</h1>
             <p className="text-lg text-slate-300 max-w-3xl">
               Learn more about the newly formed Technexus at Basava International School, our mission, vision, and the team behind this exciting initiative.
             </p>
