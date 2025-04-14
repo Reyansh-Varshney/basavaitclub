@@ -9,7 +9,7 @@ import ActivitiesSection from '@/components/ActivitiesSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-slate-900">
       <Navbar />
       <main className="flex-grow">
         <Hero />

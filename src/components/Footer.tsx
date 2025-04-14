@@ -9,11 +9,12 @@ const Footer = () => {
   return (
     <footer className="bg-slate-900 text-white pt-20 pb-10">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div className="space-y-6">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
                 <span className="text-white font-bold text-xl">TN</span>
+                {/* Space for Technexus JPG logo */}
               </div>
               <span className="font-bold text-2xl text-white">Technexus</span>
             </div>
@@ -57,14 +58,6 @@ const Footer = () => {
                 <span>Basava International School<br />New Delhi, India</span>
               </p>
               <p>Email: TechNexus@basava.edu.in</p>
-            </div>
-          </div>
-          
-          <div>
-            <h3 className="font-bold text-lg mb-6">School Hours</h3>
-            <div className="space-y-2 text-slate-300">
-              <p>Monday - Friday</p>
-              <p>8:00 AM - 3:00 PM</p>
             </div>
           </div>
         </div>

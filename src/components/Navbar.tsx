@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -34,6 +34,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
           <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-gradient-to-r from-primary to-secondary">
+            {/* Space for Technexus JPG logo */}
             <span className="text-white font-bold text-xl">TN</span>
           </div>
           <span className="font-bold text-xl text-white">Technexus</span>
