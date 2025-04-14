@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2 mouse-tracking-border rounded-xl p-2">
           <div className="w-10 h-10 rounded-xl flex items-center justify-center">
-            <img src="/lovable-uploads/c109c9d0-4d8f-4537-aba5-a245f5075e15.png" alt="Technexus Logo" className="w-full h-full object-contain" />
+            <img src="/favicon.ico" alt="Technexus Logo" className="w-full h-full object-contain" />
           </div>
           <span className="font-bold text-xl text-white">Technexus</span>
         </Link>
