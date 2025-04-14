@@ -1,14 +1,17 @@
+
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { Linkedin, Github, Globe } from 'lucide-react';
 
 interface TeamMemberProps {
   name: string;
   role: string;
   bio: string;
+  delay?: string;
 }
 
-const TeamMember = ({ name, role, bio }: TeamMemberProps) => {
+const TeamMember = ({ name, role, bio, delay = "0s" }: TeamMemberProps) => {
   // Get initials for the avatar fallback
   const initials = name
     .split(' ')
@@ -17,16 +20,27 @@ const TeamMember = ({ name, role, bio }: TeamMemberProps) => {
     .toUpperCase();
 
   return (
-    <Card className="overflow-hidden transform transition-all hover:shadow-lg">
-      <div className="p-6 flex flex-col items-center">
-        <Avatar className="h-24 w-24 mb-4">
-          <AvatarFallback className="bg-blue-100 text-blue-800 text-xl">
+    <Card className="team-card group" style={{ animationDelay: delay }}>
+      <div className="p-8 flex flex-col items-center">
+        <Avatar className="h-28 w-28 mb-6 ring-4 ring-primary/20 group-hover:ring-primary/40 transition-all">
+          <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-white text-xl">
             {initials}
           </AvatarFallback>
         </Avatar>
-        <h3 className="text-xl font-bold text-center">{name}</h3>
-        <div className="text-sm font-medium text-blue-600 mb-3 text-center">{role}</div>
-        <p className="text-gray-600 mb-4 text-sm text-center">{bio}</p>
+        <h3 className="text-xl font-bold text-center text-slate-800 group-hover:text-primary transition-colors">{name}</h3>
+        <div className="text-sm font-medium text-primary mb-4 text-center">{role}</div>
+        <p className="text-slate-600 mb-6 text-sm text-center">{bio}</p>
+        <div className="flex gap-4 opacity-0 group-hover:opacity-100 transition-opacity">
+          <a href="#" className="text-slate-500 hover:text-primary transition-colors">
+            <Linkedin size={18} />
+          </a>
+          <a href="#" className="text-slate-500 hover:text-primary transition-colors">
+            <Github size={18} />
+          </a>
+          <a href="#" className="text-slate-500 hover:text-primary transition-colors">
+            <Globe size={18} />
+          </a>
+        </div>
       </div>
     </Card>
   );
@@ -67,17 +81,23 @@ const TeamSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-24 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Our Team</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary inline-block">Meet Our Team</h2>
+          <div className="divider"></div>
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
             Get to know the brilliant minds behind the Technexus at Basava International School.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {leaders.map((leader, index) => (
-            <TeamMember key={index} {...leader} />
+            <TeamMember 
+              key={index} 
+              {...leader} 
+              delay={`${index * 0.1}s`}
+            />
           ))}
         </div>
       </div>

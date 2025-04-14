@@ -14,10 +14,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 221 83% 53%;
+    --primary: 260 73% 47%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 260 73% 47%;
+    --secondary: 221 83% 53%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 210 40% 96.1%;
@@ -33,7 +33,7 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 221 83% 53%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
   }
 
   .dark {
@@ -46,10 +46,10 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 221 83% 53%;
+    --primary: 260 73% 47%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 260 73% 47%;
+    --secondary: 221 83% 53%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;
@@ -73,10 +73,46 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
   }
 }
 
+/* Custom animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
 .hero-gradient {
-  background: linear-gradient(90deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+}
+
+.glass-card {
+  @apply backdrop-blur-md bg-white/80 dark:bg-black/40 border border-white/20 shadow-lg;
+}
+
+.hover-scale {
+  @apply transition-transform duration-300 hover:scale-105;
+}
+
+.team-card {
+  @apply overflow-hidden relative border-none shadow-lg rounded-xl transition-all duration-300 hover:shadow-xl;
+}
+
+.team-card::before {
+  content: '';
+  @apply absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 opacity-0 transition-opacity duration-300;
+}
+
+.team-card:hover::before {
+  @apply opacity-100;
+}
+
+.divider {
+  @apply h-1 w-20 bg-gradient-to-r from-primary to-secondary rounded-full my-8 mx-auto;
 }

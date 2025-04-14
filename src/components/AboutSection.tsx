@@ -1,76 +1,69 @@
 
 import React from 'react';
-import { CheckCircle, Calendar, Users, Trophy } from 'lucide-react';
+import { CheckCircle, Calendar, Users, Trophy, Zap } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const AboutSection = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-24 bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <div className="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">
-              About Our Club
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold">Fostering Innovation and Technology Skills</h2>
-            <p className="text-gray-600 text-lg">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary inline-block">About Our Club</h2>
+          <div className="divider"></div>
+        </div>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="space-y-8">
+            <h3 className="text-3xl font-bold text-slate-800">Fostering Innovation and Technology Skills</h3>
+            <p className="text-slate-600 text-lg leading-relaxed">
               The Technexus at Basava International School is a newly formed group dedicated to nurturing technical talent and fostering innovation among students. Our mission is to provide a platform for students to explore various aspects of information technology, develop practical skills, and collaborate on exciting projects.
             </p>
             
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <CheckCircle className="text-green-500 mt-1 flex-shrink-0" size={20} />
-                <div>
-                  <h3 className="font-medium">Hands-on Learning</h3>
-                  <p className="text-gray-600">Practical workshops on programming, web development, and more</p>
-                </div>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <FeatureBox 
+                icon={<CheckCircle className="text-primary" />}
+                title="Hands-on Learning"
+                description="Practical workshops on programming, web development, and more"
+              />
               
-              <div className="flex items-start gap-3">
-                <CheckCircle className="text-green-500 mt-1 flex-shrink-0" size={20} />
-                <div>
-                  <h3 className="font-medium">Project Collaboration</h3>
-                  <p className="text-gray-600">Team-based projects that solve real-world problems</p>
-                </div>
-              </div>
+              <FeatureBox 
+                icon={<CheckCircle className="text-primary" />}
+                title="Project Collaboration"
+                description="Team-based projects that solve real-world problems"
+              />
               
-              <div className="flex items-start gap-3">
-                <CheckCircle className="text-green-500 mt-1 flex-shrink-0" size={20} />
-                <div>
-                  <h3 className="font-medium">Competitions</h3>
-                  <p className="text-gray-600">Future participation in hackathons and coding competitions</p>
-                </div>
-              </div>
+              <FeatureBox 
+                icon={<CheckCircle className="text-primary" />}
+                title="Competitions"
+                description="Future participation in hackathons and coding competitions"
+              />
               
-              <div className="flex items-start gap-3">
-                <CheckCircle className="text-green-500 mt-1 flex-shrink-0" size={20} />
-                <div>
-                  <h3 className="font-medium">Guest Speakers</h3>
-                  <p className="text-gray-600">Plans to invite industry professionals and tech experts</p>
-                </div>
-              </div>
+              <FeatureBox 
+                icon={<CheckCircle className="text-primary" />}
+                title="Guest Speakers"
+                description="Plans to invite industry professionals and tech experts"
+              />
             </div>
           </div>
           
           <div className="grid grid-cols-2 gap-6">
-
             <StatCard 
-              icon={<Users className="text-purple-600" />}
+              icon={<Users className="text-primary" size={28} />}
               title="Current Members"
               value="4"
             />
             <StatCard 
-              icon={<Calendar className="text-blue-600" />}
-              title="Weekly Meetings"
-              value="Friday*"
+              icon={<Zap className="text-secondary" size={28} />}
+              title="Weekly Activities"
+              value="5+"
             />
             <StatCard 
-              icon={<Trophy className="text-yellow-600" />}
+              icon={<Trophy className="text-amber-500" size={28} />}
               title="Future Goals"
               value="Many"
             />
             <StatCard 
-              icon={<CheckCircle className="text-green-600" />}
+              icon={<CheckCircle className="text-emerald-500" size={28} />}
               title="Projects Planned"
               value="5+"
             />
@@ -78,6 +71,26 @@ const AboutSection = () => {
         </div>
       </div>
     </section>
+  );
+};
+
+interface FeatureBoxProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
+
+const FeatureBox = ({ icon, title, description }: FeatureBoxProps) => {
+  return (
+    <div className="flex items-start gap-4 group hover-scale">
+      <div className="mt-1 flex-shrink-0 p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
+        {icon}
+      </div>
+      <div>
+        <h4 className="font-semibold text-slate-800">{title}</h4>
+        <p className="text-slate-600 text-sm">{description}</p>
+      </div>
+    </div>
   );
 };
 
@@ -89,11 +102,11 @@ interface StatCardProps {
 
 const StatCard = ({ icon, title, value }: StatCardProps) => {
   return (
-    <Card className="border-0 shadow-md">
+    <Card className="border-none shadow-lg hover-scale overflow-hidden">
       <CardContent className="p-6 flex flex-col items-center text-center">
-        <div className="mb-4 p-3 bg-gray-50 rounded-full">{icon}</div>
-        <h3 className="text-2xl font-bold mb-2">{value}</h3>
-        <p className="text-gray-600">{title}</p>
+        <div className="mb-4 p-4 rounded-full bg-slate-50">{icon}</div>
+        <h3 className="text-3xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">{value}</h3>
+        <p className="text-slate-600">{title}</p>
       </CardContent>
     </Card>
   );
