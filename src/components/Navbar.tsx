@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -33,14 +32,16 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-gradient-to-r from-primary to-secondary">
-            {/* Space for Technexus JPG logo */}
-            <span className="text-white font-bold text-xl">TN</span>
+          <div className="w-10 h-10 rounded-xl flex items-center justify-center">
+            <img 
+              src="/lovable-uploads/c109c9d0-4d8f-4537-aba5-a245f5075e15.png" 
+              alt="Technexus Logo" 
+              className="w-full h-full object-contain"
+            />
           </div>
           <span className="font-bold text-xl text-white">Technexus</span>
         </Link>
 
-        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           <NavLinks 
             className="flex gap-8" 
@@ -56,7 +57,6 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <Button 
             variant="ghost" 
@@ -68,7 +68,6 @@ const Navbar = () => {
           </Button>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden absolute top-16 left-0 right-0 bg-slate-900/95 backdrop-blur-lg shadow-lg py-6 px-4 rounded-b-2xl">
             <NavLinks className="flex flex-col gap-6" isScrolled={true} />

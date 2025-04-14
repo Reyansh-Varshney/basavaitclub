@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, ExternalLink } from 'lucide-react';
@@ -12,9 +11,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div className="space-y-6">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
-                <span className="text-white font-bold text-xl">TN</span>
-                {/* Space for Technexus JPG logo */}
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/c109c9d0-4d8f-4537-aba5-a245f5075e15.png" 
+                  alt="Technexus Logo" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <span className="font-bold text-2xl text-white">Technexus</span>
             </div>
