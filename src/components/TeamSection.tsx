@@ -46,12 +46,12 @@ const TeamSection = () => {
     },
     {
       name: "Reyansh Varshney",
-      role: "President",
+      role: "Secreatary",
       bio: "Leading club initiatives and fostering a collaborative learning environment.",
     },
     {
       name: "Vedaant Gomber",
-      role: "Secretary",
+      role: "Vice Secretary",
       bio: "A True all-rounder and a future prospect for the IT Club.",
     },
     {
