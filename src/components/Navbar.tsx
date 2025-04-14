@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -24,14 +25,14 @@ const Navbar = () => {
   return (
     <nav 
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
         isScrolled 
-          ? "bg-slate-900/90 backdrop-blur-md shadow-md py-2" 
+          ? "bg-black/80 backdrop-blur-md shadow-lg py-2" 
           : "bg-transparent py-4"
       )}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2 mouse-tracking-border rounded-xl p-2">
           <div className="w-10 h-10 rounded-xl flex items-center justify-center">
             <img 
               src="/lovable-uploads/c109c9d0-4d8f-4537-aba5-a245f5075e15.png" 
@@ -50,7 +51,7 @@ const Navbar = () => {
           <Link to="/apply">
             <Button 
               size="sm" 
-              className="rounded-full px-6 bg-gradient-to-r from-primary to-secondary hover:opacity-90"
+              className="futuristic-button rounded-full px-6"
             >
               Join Now
             </Button>
@@ -69,11 +70,11 @@ const Navbar = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden absolute top-16 left-0 right-0 bg-slate-900/95 backdrop-blur-lg shadow-lg py-6 px-4 rounded-b-2xl">
+          <div className="md:hidden absolute top-16 left-0 right-0 bg-black/95 backdrop-blur-lg shadow-lg py-6 px-4 rounded-b-2xl">
             <NavLinks className="flex flex-col gap-6" isScrolled={true} />
             <div className="mt-6">
               <Link to="/apply">
-                <Button className="w-full rounded-full bg-gradient-to-r from-primary to-secondary hover:opacity-90">Join Now</Button>
+                <Button className="w-full rounded-full futuristic-button">Join Now</Button>
               </Link>
             </div>
           </div>
@@ -89,20 +90,18 @@ interface NavLinksProps {
 }
 
 const NavLinks = ({ className, isScrolled = true }: NavLinksProps) => {
-  const linkClass = "text-slate-300 hover:text-white font-medium transition-colors";
-
   return (
     <div className={cn(className)}>
-      <Link to="/" className={linkClass}>
+      <Link to="/" className="text-slate-300 hover:text-primary font-medium transition-colors relative mouse-tracking-border p-2 rounded">
         Home
       </Link>
-      <Link to="/about" className={linkClass}>
+      <Link to="/about" className="text-slate-300 hover:text-primary font-medium transition-colors relative mouse-tracking-border p-2 rounded">
         About
       </Link>
-      <Link to="/activities" className={linkClass}>
+      <Link to="/activities" className="text-slate-300 hover:text-primary font-medium transition-colors relative mouse-tracking-border p-2 rounded">
         Activities
       </Link>
-      <Link to="/team" className={linkClass}>
+      <Link to="/team" className="text-slate-300 hover:text-primary font-medium transition-colors relative mouse-tracking-border p-2 rounded">
         Team
       </Link>
     </div>

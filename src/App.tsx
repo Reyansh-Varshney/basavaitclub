@@ -10,12 +10,14 @@ import Activities from "./pages/Activities";
 import Team from "./pages/Team";
 import Apply from "./pages/Apply";
 import NotFound from "./pages/NotFound";
+import MouseTracker from "./components/MouseTracker";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+      <MouseTracker />
       <Toaster />
       <Sonner />
       <BrowserRouter>
